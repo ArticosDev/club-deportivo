@@ -1,25 +1,33 @@
+/* ===== RESET ===== */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
 
-/* NAVBAR */
+/* ===== NAVBAR ===== */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: black;
+  background: #000;
   color: white;
   padding: 15px 30px;
+  position: sticky;
+  top: 0;
 }
 
 .menu a {
   color: white;
   margin-left: 20px;
   text-decoration: none;
+  font-weight: bold;
 }
 
-/* HERO (PORTADA) */
+.menu a:hover {
+  color: #ff3c00;
+}
+
+/* ===== HERO (INICIO) ===== */
 .hero {
   height: 90vh;
   display: flex;
@@ -32,19 +40,16 @@ body {
   text-align: center;
 }
 
-/* LOGO */
 .hero-logo {
   width: 150px;
   margin-bottom: 20px;
 }
 
-/* TITULO */
 .hero h1 {
   font-size: 36px;
   margin-bottom: 10px;
 }
 
-/* TEXTO */
 .hero-text {
   font-size: 18px;
   margin-bottom: 20px;
@@ -61,11 +66,11 @@ body {
   border-radius: 5px;
 }
 
-/* HOVER 🔥 */
 .hero-btn:hover {
   background: #ff5e2e;
 }
 
+/* ===== SECCIONES GENERALES ===== */
 section {
   padding: 60px 20px;
   text-align: center;
@@ -73,4 +78,98 @@ section {
 
 section:nth-child(even) {
   background-color: #f5f5f5;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* ===== QUIÉNES SOMOS ===== */
+#quienes p {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* ===== METODOLOGÍA ===== */
+#metodologia ul {
+  list-style: none;
+  padding: 0;
+}
+
+#metodologia li {
+  margin: 5px 0;
+}
+
+/* ===== ENTRENADORES ===== */
+#entrenadores {
+  background-color: #f5f5f5;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  width: 220px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* mantiene proporción */
+  border-radius: 10px; /* bordes suaves */
+  margin-bottom: 10px;
+  overflow: hidden; /* importante para la imagen */
+  transition: 0.3s;
+}
+
+/* ===== VALORES ===== */
+#valores ul {
+  list-style: none;
+  padding: 0;
+}
+
+#valores li {
+  margin: 5px 0;
+}
+
+/* ===== GALERÍA ===== */
+.galeria {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.galeria img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+/* ===== BOTONES GENERALES ===== */
+button {
+  transition: 0.3s;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #000;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  margin-top: 40px;
 }
