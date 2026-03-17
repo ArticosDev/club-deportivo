@@ -1,17 +1,14 @@
 function Navbar() {
   return (
-    <nav style={{ background: "#111", padding: "10px" }}>
+    <nav className="navbar">
+      <div className="logo">Sporting Phoenix</div>
+
+      <div className="menu">
         <a href="#inicio">Inicio</a>
-        <a href="#quienes">Quiénes</a>
-        <a href="#metodologia">Metodología</a>
-        <a href="#entrenadores">Entrenadores</a>
-        <a href="#valores">Valores</a>
-        <a href="#mision">Misión</a>
-        <a href="#competencia">Competencia</a>
-        <a href="#galeria">Galería</a>
-        <a href="#indumentaria">Indumentaria</a>
-        <a href="#unete">Únete</a>
+        <a href="#quienes">Club</a>
+        <a href="#metodologia">Entrenamiento</a>
         <a href="#contacto">Contacto</a>
+      </div>
     </nav>
   );
 }

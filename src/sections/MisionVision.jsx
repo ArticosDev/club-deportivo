@@ -1,7 +1,7 @@
 function MisionVision() {
   return (
     <section id="misionVision">
-      <h2>mision y vision</h2>
+      <h2>misionVision</h2>
     </section>
   );
 }

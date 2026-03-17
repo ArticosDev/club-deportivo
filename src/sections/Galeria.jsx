@@ -1,9 +1,9 @@
-function Galeria() {
+function galeria() {
   return (
     <section id="galeria">
-      <h2>galeria de fotos</h2>
+      <h2>galeria</h2>
     </section>
   );
 }
 
-export default Galeria;
+export default galeria;

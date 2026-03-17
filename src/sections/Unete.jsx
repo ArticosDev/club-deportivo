@@ -1,7 +1,7 @@
 function Unete() {
   return (
     <section id="unete">
-      <h2>unete a este gran club</h2>
+      <h2>unete</h2>
     </section>
   );
 }
