@@ -1,9 +1,10 @@
-function galeria() {
+function Galeria() {
   return (
     <section id="galeria">
-      <h2>galeria</h2>
+      <h2>Galería</h2>
+      <p>Próximamente se agregarán fotografías del equipo y actividades.</p>
     </section>
   );
 }
 
-export default galeria;
+export default Galeria;
