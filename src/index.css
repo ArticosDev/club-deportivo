@@ -23,6 +23,7 @@ body {
 
 .site-shell {
   position: relative;
+  isolation: isolate;
 }
 
 .site-content {
@@ -62,85 +63,71 @@ body {
 
 .flame {
   position: absolute;
-  width: clamp(130px, 14vw, 220px);
-  max-width: none;
-  opacity: 0.8;
-  filter: drop-shadow(0 10px 24px rgba(255, 86, 0, 0.45));
+  width: clamp(120px, 14vw, 220px);
+  opacity: 0.32;
+  filter: drop-shadow(0 10px 26px rgba(255, 77, 0, 0.28));
 }
 
-.flame-rail-left .flame {
-  left: clamp(-52px, -3vw, -20px);
+.flame-left {
+  left: clamp(-55px, -4vw, -18px);
 }
 
-.flame-rail-right .flame {
-  right: clamp(-52px, -3vw, -20px);
+.flame-right {
+  right: clamp(-55px, -4vw, -18px);
   transform: scaleX(-1);
 }
 
-.flame-slot-top {
-  top: 96px;
+.flame-top {
+  top: 120px;
 }
 
-.flame-slot-middle {
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.flame-rail-right .flame-slot-middle {
-  transform: translateY(-50%) scaleX(-1);
-}
-
-.flame-slot-bottom {
-  bottom: 56px;
+.flame-bottom {
+  bottom: 140px;
 }
 
 @media (max-width: 900px) {
-  .flame-rail {
-    width: 96px;
-  }
-
   .flame {
-    width: 148px;
-    opacity: 0.62;
+    width: clamp(88px, 24vw, 150px);
+    opacity: 0.24;
   }
 
-  .flame-rail-left .flame {
-    left: -58px;
+  .flame-left {
+    left: -34px;
   }
 
-  .flame-rail-right .flame {
-    right: -58px;
+  .flame-right {
+    right: -34px;
+  }
+
+  .flame-top {
+    top: 100px;
+  }
+
+  .flame-bottom {
+    bottom: 90px;
   }
 }
 
 @media (max-width: 640px) {
-  .flame-rail {
-    width: 68px;
-  }
-
-  .flame-rail::before {
-    background: linear-gradient(to bottom, rgba(255, 90, 0, 0.1), transparent 20%, transparent 80%, rgba(255, 90, 0, 0.1));
-  }
-
   .flame {
-    width: 112px;
-    opacity: 0.52;
+    width: 92px;
+    opacity: 0.2;
   }
 
-  .flame-rail-left .flame {
-    left: -44px;
+  .flame-left {
+    left: -40px;
   }
 
-  .flame-rail-right .flame {
-    right: -44px;
+  .flame-right {
+    right: -40px;
   }
 
-  .flame-slot-top {
-    top: 78px;
+  .flame-top {
+    top: 84px;
   }
 
-  .flame-slot-bottom {
-    bottom: 42px;
+  .flame-bottom {
+    bottom: 60px;
   }
 }
 
