@@ -11,6 +11,8 @@ function Inicio() {
           de su fuego renaceremos aún más fuertes.
         </h1>
 
+        <p><strong>Entrenamientos en Maipú</strong></p>
+        
         <p className="hero-text">
           En Sporting Phoenix no solo se entrena futsal, se forma carácter,
           disciplina y pasión por el juego.
