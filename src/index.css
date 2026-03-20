@@ -16,6 +16,99 @@ body {
   line-height: 1.6;
 }
 
+#root {
+  position: relative;
+  overflow-x: clip;
+}
+
+.site-shell {
+  position: relative;
+  isolation: isolate;
+}
+
+.site-content {
+  position: relative;
+  z-index: 1;
+}
+
+.site-flames {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: clip;
+}
+
+.flame {
+  position: absolute;
+  width: clamp(120px, 14vw, 220px);
+  opacity: 0.32;
+  filter: drop-shadow(0 10px 26px rgba(255, 77, 0, 0.28));
+}
+
+.flame-left {
+  left: clamp(-55px, -4vw, -18px);
+}
+
+.flame-right {
+  right: clamp(-55px, -4vw, -18px);
+  transform: scaleX(-1);
+}
+
+.flame-top {
+  top: 120px;
+}
+
+.flame-bottom {
+  bottom: 140px;
+}
+
+@media (max-width: 900px) {
+  .flame {
+    width: clamp(88px, 24vw, 150px);
+    opacity: 0.24;
+  }
+
+  .flame-left {
+    left: -34px;
+  }
+
+  .flame-right {
+    right: -34px;
+  }
+
+  .flame-top {
+    top: 100px;
+  }
+
+  .flame-bottom {
+    bottom: 90px;
+  }
+}
+
+@media (max-width: 640px) {
+  .flame {
+    width: 92px;
+    opacity: 0.2;
+  }
+
+  .flame-left {
+    left: -40px;
+  }
+
+  .flame-right {
+    right: -40px;
+  }
+
+  .flame-top {
+    top: 84px;
+  }
+
+  .flame-bottom {
+    bottom: 60px;
+  }
+}
+
 /* ===== NAVBAR ===== */
 .navbar {
   position: sticky;
